@@ -7,13 +7,15 @@ public class Main {
         Person luanpozzobon = new Person("luanpozzobon");
         luanpozzobon.add(need)
                     .code(Java.class);
+        var site = luanpozzobon.create("HTML", "CSS", "JavaScript");
 
         Readme readme = luanpozzobon.github()
                             .withBio()
                             .withSkills()
                             .withStats()
                             .createReadme();
-        
+        readme.before(skills)
+              .add(site);
         System.out.println(readme.toMarkdown());
     }
 }
@@ -26,6 +28,7 @@ public class Main {
     <a href="https://www.linkedin.com/in/luanpozzobon/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linkedin/linkedin-original.svg" width=32px></a>
     <a href="mailto:luanpozzobon@gmail.com"><img src="./assets/Gmail.png" width=32px></a>
 </div>
+<p align="center">You can also find more at <a href="https://luanpozzobon.github.io/luanpozzobon_site/">this obscure site</a></p>
 
 <div align="center">
 <h2>💻 Tech Skills</h2>
