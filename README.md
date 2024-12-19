@@ -37,11 +37,11 @@ public class Main {
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" height=32px />
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" height=32px />
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" height=32px />
-    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" height=32px />
-    <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" height=32px />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/javascript/javascript-original.svg" height=32px />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg" height=32px />
     <h3>Frameworks</h3>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" height=32px />
-    <img src="https://github.com/devicons/devicon/blob/master/icons/angular/angular-original.svg" height=32px />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/angular/angular-original.svg" height=32px />
     <h3>Databases</h3>
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" height=32px />
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" height=32px />
