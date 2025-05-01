@@ -1,0 +1,8 @@
+#hotbar {
+    display: flex;
+    flex-direction: row;
+}
+
+slot-component, a {
+    margin-right: 4px;
+}
