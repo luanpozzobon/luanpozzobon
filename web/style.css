@@ -15,6 +15,102 @@ body {
     color: white;
 }
 
+h1 {
+    font-size: 72px;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+}
+
+h1,
+h2,
+hr {
+    padding: 0px;
+}
+
+#neon-sign {
+    width: 100%;
+    position: sticky;
+    margin-bottom: 100px;
+}
+
+.neon-text {
+    text-align: center;
+    font-family: var(--special-font);
+    color: var(--font-color);
+    text-shadow:
+        0 0 5px var(--font-color),
+        0 0 15px var(--font-color),
+        0 0 30px var(--font-color);
+}
+
+.neon-text .off {
+    animation: flicker 15s infinite alternate;
+    /* animation: none; */
+    text-shadow: none;
+    color: rgba(200, 200, 200, 0.4);
+}
+
+@keyframes flicker {
+
+    0%,
+    19.9%,
+    20.5%,
+    37%,
+    38%,
+    71%,
+    71.5%,
+    80%,
+    81.7%,
+    90%,
+    91%,
+    100% {
+        color: rgba(200, 200, 200, 0.4);
+        text-shadow: none;
+    }
+
+    20%,
+    20.4%,
+    37.1%,
+    37.9%,
+    71.1%,
+    80.1%,
+    81.6%,
+    90.1%,
+    90.9% {
+        color: var(--font-color);
+        text-shadow:
+            0 0 5px var(--font-color),
+            0 0 15px var(--font-color),
+            0 0 30px var(--font-color);
+    }
+}
+
+#title span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#title span:nth-child(2) {
+    animation-delay: 8s;
+}
+
+#title span:nth-child(3) {
+    animation-delay: 5s;
+}
+
+#subtitle span:nth-child(1) {
+    animation-delay: 4s;
+}
+
 #app {
     display: flex;
     justify-content: center;
