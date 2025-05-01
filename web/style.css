@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Neon80s;
+    src: url(/assets/fonts/neon.ttf);
+}
+
+:root {
+    --special-font: Neon80s;
+    --font-color: rgba(255, 255, 255, 0.75);
+    --bg-color: rgba(0, 0, 0, 0.8);
+    --comp-color: rgba(0, 255, 255, 0.7);
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hotbar-component {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
