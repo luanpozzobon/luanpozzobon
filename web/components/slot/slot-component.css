@@ -1,0 +1,76 @@
+#slot {
+  cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+#slot:hover {
+  transform: scale(1.05);
+}
+
+#slot.selected {
+  border: none;
+  width: 41px;
+  height: 41px;
+}
+
+#slot.selected::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background:
+    conic-gradient(oklch(100% 100% 0deg),
+      oklch(100% 100% 30deg),
+      oklch(100% 100% 60deg),
+      oklch(100% 100% 90deg),
+      oklch(100% 100% 120deg),
+      oklch(100% 100% 150deg),
+      oklch(100% 100% 180deg),
+      oklch(100% 100% 210deg),
+      oklch(100% 100% 240deg),
+      oklch(100% 100% 270deg),
+      oklch(100% 100% 300deg),
+      oklch(100% 100% 330deg),
+      oklch(100% 100% 360deg));
+
+  z-index: 0;
+  animation: spin 8s linear infinite;
+}
+
+#slot.selected::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: black;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+::slotted(*) {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
