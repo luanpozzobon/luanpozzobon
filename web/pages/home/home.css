@@ -1,2 +1,19 @@
 @import url('/style.css');
 
+#start {
+    max-width: 1000px;
+}
+
+#welcome {
+    font-size: 2rem;
+    white-space: nowrap;
+    border-right: 2px solid #0f0;
+    animation: blink 2s ease-out infinite;
+    display: inline-block;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
