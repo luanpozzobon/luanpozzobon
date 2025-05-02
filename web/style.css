@@ -10,9 +10,12 @@
     --comp-color: rgba(0, 255, 255, 0.7);
 }
 
-body {
-    background-color: black;
-    color: white;
+body,
+html {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
 }
 
 h1 {
@@ -122,4 +125,50 @@ hotbar-component {
     bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+p {
+    line-height: 32px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.next-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+
+.next-page > p {
+    font-size: 20px;
+}
+
+.next-page:hover {
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+#arrow {
+    font-size: 32px;
+    animation: moveArrow 2s ease-out infinite;
+}
+
+@keyframes moveArrow {
+    0% {
+        transform: translateX(0px);
+    }
+
+    65% {
+        transform: translateX(16px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
