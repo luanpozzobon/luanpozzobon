@@ -1,6 +1,6 @@
 hotbar_slots = {
     'home': 0,
-    'contact': 1
+    'aboutme': 1
 }
 
 class Hotbar extends HTMLElement {
@@ -31,15 +31,15 @@ class Hotbar extends HTMLElement {
     }
 
     changeSlot(hash) {
-        const hotbar = this.shadowRoot.getElementById("hotbar");
+        const hotbar = this.shadowRoot.getElementById('hotbar');
 
         const pathname = hash.replace('#', '');
         const idx = hotbar_slots[pathname];
 
-        hotbar.querySelectorAll('slot-component').forEach(slot => {
-            slot.shadowRoot?.getElementById('slot')?.classList.remove('selected');
-        })
         setTimeout(() => {
+            hotbar.querySelectorAll('slot-component').forEach(slot => {
+                slot.shadowRoot?.getElementById('slot')?.classList.remove('selected');
+            })
             hotbar.querySelectorAll('slot-component')[idx]?.shadowRoot?.getElementById('slot')?.classList.add('selected');
         }, 200)
     }
