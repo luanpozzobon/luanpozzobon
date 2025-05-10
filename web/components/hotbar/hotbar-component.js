@@ -1,6 +1,7 @@
 hotbar_slots = {
     'home': 0,
-    'aboutme': 1
+    'aboutme': 1,
+    'projects': 2,
 }
 
 class Hotbar extends HTMLElement {

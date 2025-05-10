@@ -1,7 +1,7 @@
 const routes = {
     '#home': 'home',
-    '#contact': 'contact',
     '#aboutme': 'aboutme',
+    '#projects': 'projects',
 };
 
 async function loadPage(route) {
