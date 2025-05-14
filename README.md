@@ -1,63 +1,120 @@
-<div align="center">
+# 🧑‍💻 Luan Pozzobon
+**`Desenvolvedor Full-stack`**
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=11&pause=1000&color=8C67DB&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%8C%8E+Hello%2C+World!+%F0%9F%8C%8E;Welcome+to+Luan+Pozzobon's+Github!)](https://git.io/typing-svg)
-</div>
+Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente sou estudante de Ciência da Computação na Universidade Positivo. Desde criança, gosto muito de tecnologia, então decidi embarcar nesta carreira.
 
-```Java
-public class Main {
-    public static void main(String[] args) {
-        Developer developer = new Developer(LuanPozzobon.profile());
+[![Static Badge](https://img.shields.io/badge/E--Mail-white?style=for-the-badge&logo=gmail)](mailto:luanpozzobon@gmail.com)
+[![Static Badge](https://img.shields.io/badge/LinkedIn-white?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMDA3NmIyIiBkPSJNMTE2IDNIMTJhOC45MSA4LjkxIDAgMDAtOSA4Ljh2MTA0LjQyYTguOTEgOC45MSAwIDAwOSA4Ljc4aDEwNGE4LjkzIDguOTMgMCAwMDktOC44MVYxMS43N0E4LjkzIDguOTMgMCAwMDExNiAzeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yMS4wNiA0OC43M2gxOC4xMVYxMDdIMjEuMDZ6bTkuMDYtMjlhMTAuNSAxMC41IDAgMTEtMTAuNSAxMC40OSAxMC41IDEwLjUgMCAwMTEwLjUtMTAuNDlNNTAuNTMgNDguNzNoMTcuMzZ2OGguMjRjMi40Mi00LjU4IDguMzItOS40MSAxNy4xMy05LjQxQzEwMy42IDQ3LjI4IDEwNyA1OS4zNSAxMDcgNzV2MzJIODguODlWNzguNjVjMC02Ljc1LS4xMi0xNS40NC05LjQxLTE1LjQ0cy0xMC44NyA3LjM2LTEwLjg3IDE1VjEwN0g1MC41M3oiLz48L3N2Zz4=)](https://www.linkedin.com/in/luanpozzobon/)
+[![Static Badge](https://img.shields.io/badge/My%20Site-white?style=for-the-badge&logo=netlify)](https://luanpozzobon.netlify.app)
 
-        Github github = Github.create(developer)
-                              .addProjects(developer.work());
-
-        Readme readme = Readme.create(github)
-                              .writeBio()
-                              .addSkills()
-                              .showStats();
-
-        readme.render();
-    }
-}
-```
-
-<p align="center">Desenvolvedor de Software e Estudante de Ciência da Computação!</p>
-<p align="center">Apaixonado por programação e tecnologia</p>
-<p align="center">Você também pode me encontrar em:</p>
-
-<div align="center">
-
-[![Static Badge](https://img.shields.io/badge/E--Mail-white?style=for-the-badge&logo=gmail&labelColor=black)](mailto:luanpozzobon@gmail.com)
-[![Static Badge](https://img.shields.io/badge/LinkedIn-white?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMDA3NmIyIiBkPSJNMTE2IDNIMTJhOC45MSA4LjkxIDAgMDAtOSA4Ljh2MTA0LjQyYTguOTEgOC45MSAwIDAwOSA4Ljc4aDEwNGE4LjkzIDguOTMgMCAwMDktOC44MVYxMS43N0E4LjkzIDguOTMgMCAwMDExNiAzeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0yMS4wNiA0OC43M2gxOC4xMVYxMDdIMjEuMDZ6bTkuMDYtMjlhMTAuNSAxMC41IDAgMTEtMTAuNSAxMC40OSAxMC41IDEwLjUgMCAwMTEwLjUtMTAuNDlNNTAuNTMgNDguNzNoMTcuMzZ2OGguMjRjMi40Mi00LjU4IDguMzItOS40MSAxNy4xMy05LjQxQzEwMy42IDQ3LjI4IDEwNyA1OS4zNSAxMDcgNzV2MzJIODguODlWNzguNjVjMC02Ljc1LS4xMi0xNS40NC05LjQxLTE1LjQ0cy0xMC44NyA3LjM2LTEwLjg3IDE1VjEwN0g1MC41M3oiLz48L3N2Zz4=&labelColor=black)](https://www.linkedin.com/in/luanpozzobon/)
-[![Static Badge](https://img.shields.io/badge/My%20Site-white?style=for-the-badge&logo=netlify&labelColor=black)](https://luanpozzobon.netlify.app)
-
-</div>
-
-<div align="center">
+---
 
 ## 💻 Tech Skills
-### Languages
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/javascript/javascript-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/typescript/typescript-original.svg" height=32px />
+### 🤖 Linguagens e Frameworks
 
-### Frameworks
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/angular/angular-original.svg" height=32px />
+<img
+    align="left"
+    alt="Java"
+    title="Java"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+/>
+<img
+    align="left"
+    alt="C#"
+    title="C#"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+/>
+<img
+    align="left"
+    alt="C"
+    title="C"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+/>
+<img
+    align="left"
+    alt="Python"
+    title="Python"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+/>
+<img
+    align="left"
+    alt="Javascript"
+    title="Javascript"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+/>
+          
+<img
+    alt="Typescript"
+    title="Typescript"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+/>
 
-### Databases
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" height=32px />
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" height=32px />
+<img
+    align="left"
+    alt="Spring"
+    title="Spring"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+/>
+<img
+    alt="Angular"
+    title="Angular"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+/>
 
-</div>  
+### 🛠️ Ferramentas e Outros
 
-<div align="center">
+<img
+    align="left"
+    alt="Git"
+    title="Git"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+/>
+<img
+    align="left"
+    alt="MySQL"
+    title="MySQL"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+/>
+<img
+    alt="PostgreSQL"
+    title="PostgreSQL"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+/>
 
-## 📊 Github Stats
-<img src="https://github-readme-stats.vercel.app/api?username=luanpozzobon&show_icons=true&count_private=false&theme=aura" height=137px width=40% />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=luanpozzobon&layout=compact&theme=aura&card_width=100" height=137px width=30% />
+---
 
-</div>
+### 📊 Github Stats
+<img 
+    align="left"
+    alt="Github Stats"
+    height="150px"
+    src="https://github-readme-stats.vercel.app/api?username=luanpozzobon&show_icons=true&count_private=false&theme=tokyonight"
+/>
+<img
+    align="left"
+    alt="Most Used Languages"
+    height="150px"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=luanpozzobon&layout=compact&theme=tokyonight"
+/>
