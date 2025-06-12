@@ -54,6 +54,10 @@ mapping = {
 
         window.open(link.href, '_blank');
     },
+    'W': () => window.scrollBy({ top: -100, behavior: 'smooth' }),
+    'A': () => window.scrollBy({ left: -100, behavior: 'smooth' }),
+    'S': () => window.scrollBy({ top: 100, behavior: 'smooth' }),
+    'D': () => window.scrollBy({ left: 100, behavior: 'smooth' }),
 }
 
 window.addEventListener('keypress', (event) => {
@@ -66,7 +70,7 @@ window.addEventListener('keypress', (event) => {
 function getHotbarLink(slotNumber) {
     const LINK_PREFIX = 'hotbar-link';
     const hotbar = document.querySelector('hotbar-component');
-    
+
     if (!hotbar) return null;
 
     return hotbar.shadowRoot.getElementById(`${LINK_PREFIX}-${slotNumber}`);
