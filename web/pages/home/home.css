@@ -2,13 +2,14 @@
 
 #start {
     max-width: 1000px;
+    padding-bottom: 100px;
 }
 
 #welcome {
     font-size: 2rem;
-    white-space: nowrap;
-    border-right: 2px solid #0f0;
-    animation: blink 2s ease-out infinite;
+    white-space: wrap;
+    /* border-right: 2px solid #0f0;
+    animation: blink 2s ease-out infinite; */
     display: inline-block;
 }
 

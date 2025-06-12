@@ -15,7 +15,15 @@ html {
     background-color: var(--bg-color);
     color: var(--font-color);
     font-family: 'Courier New', Courier, monospace;
-    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -38,12 +46,6 @@ h1,
 h2,
 hr {
     padding: 0px;
-}
-
-#neon-sign {
-    width: 100%;
-    position: sticky;
-    margin-bottom: 100px;
 }
 
 .neon-text {
@@ -170,5 +172,15 @@ a {
 
     100% {
         transform: translateX(0px);
+    }
+}
+
+@media (max-width: 600px) {
+    hr {
+        width: 100%;
+    }
+
+    .next-page p {
+        font-size: 16px;
     }
 }
