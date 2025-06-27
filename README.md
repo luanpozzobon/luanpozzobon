@@ -22,6 +22,14 @@ Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente
 />
 <img
     align="left"
+    alt="Kotlin"
+    title="Kotlin"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+/>
+<img
+    align="left"
     alt="C#"
     title="C#"
     width="30px"
@@ -69,6 +77,14 @@ Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente
     style="padding-right: 11px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
 />
+<img 
+    align="left"
+    alt="JUnit"
+    title="JUnit"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" 
+/>
 <img
     alt="Angular"
     title="Angular"
@@ -89,6 +105,22 @@ Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente
 />
 <img
     align="left"
+    alt="PostgreSQL"
+    title="PostgreSQL"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+/>
+<img 
+    align="left"
+    alt="Docker"
+    title="Docker"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" 
+/>
+<img
+    align="left"
     alt="MySQL"
     title="MySQL"
     width="30px"
@@ -96,12 +128,12 @@ Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
 />
 <img
-    alt="PostgreSQL"
-    title="PostgreSQL"
+    alt="SonarQube"
+    title="SonarQube"
     width="30px"
     style="padding-right: 11px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-/>
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg"
+/>    
 
 ---
 
