@@ -1,0 +1,44 @@
+#xp-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.xp-bar-container {
+    width: 100%;
+    border-radius: 10px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.xp-bar-fill {
+    align-self: flex-start;
+    height: 10px;
+    border-radius: inherit;
+
+    background-image: linear-gradient(to top,
+        rgb(93, 128, 52),
+        rgb(180, 226, 130),
+        rgb(93, 128, 52)
+    );
+}
+
+.xp-text {
+    font-family: 'Monocraft';
+    font-size: 21px;
+    margin-bottom: -6px;
+
+    color: rgb(180, 226, 130);
+    -webkit-text-stroke: 0.6px black;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    #xp-bar {
+        transform: scale(0.8);
+    }
+
+    .xp-text {
+        margin-bottom: -3px;
+    }
+}

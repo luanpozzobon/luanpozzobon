@@ -2,6 +2,10 @@
     font-family: Neon80s;
     src: url(/assets/fonts/neon.ttf);
 }
+@font-face {
+    font-family: Monocraft;
+    src: url(/assets/fonts/Monocraft.ttf);
+}
 
 :root {
     --special-font: Neon80s;
@@ -20,6 +24,7 @@ html {
 
 header {
     position: sticky;
+    z-index: 5;
     top: 0;
     background-color: var(--bg-color);
     width: 100%;
@@ -60,7 +65,6 @@ hr {
 
 .neon-text .off {
     animation: flicker 15s infinite alternate;
-    /* animation: none; */
     text-shadow: none;
     color: rgba(200, 200, 200, 0.4);
 }
@@ -122,11 +126,21 @@ hr {
     align-items: center;
 }
 
-hotbar-component {
+xp-bar-component {
     position: fixed;
-    bottom: 5%;
+    bottom: 75px;
     left: 50%;
     transform: translateX(-50%);
+    width: 436px;
+    z-index: 4;
+}
+
+hotbar-component {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
 }
 
 p {
@@ -182,5 +196,9 @@ a {
 
     .next-page p {
         font-size: 16px;
+    }
+
+    xp-bar-component {
+        bottom: 70px;
     }
 }

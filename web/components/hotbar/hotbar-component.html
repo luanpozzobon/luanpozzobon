@@ -4,6 +4,7 @@
             <div slot="content">
                 <img src="/assets/icons/material-symbols--home.png" width="24px" alt="Acessar Página: Inicial">
             </div>
+            <div slot="number">1</div>
         </slot-component>
     </a>
     <a href="#aboutme" target="_self" rel="next" id="hotbar-link-2">
@@ -11,6 +12,7 @@
             <div slot="content">
                 <img src="/assets/icons/material-symbols--lab-profile-outline.png" width="24px" alt="Acessar Página: Sobre">
             </div>
+            <div slot="number">2</div>
         </slot-component>
     </a>
     <a href="#projects" target="_self" id="hotbar-link-3">
@@ -18,16 +20,24 @@
             <div slot="content">
                 <img src="/assets/icons/material-symbols--folder-open.png" width="24px" alt="Acessar Página: Projetos">
             </div>
+            <div slot="number">3</div>
         </slot-component>
     </a>
-    <slot-component></slot-component>
-    <slot-component></slot-component>
-    <slot-component></slot-component>
+    <slot-component>
+        <div slot="number">4</div>
+    </slot-component>
+    <slot-component>
+        <div slot="number">5</div>
+    </slot-component>
+    <slot-component>
+        <div slot="number">6</div>
+    </slot-component>
     <a href="mailto:luanpozzobon@gmail.com" rel="me" id="hotbar-link-7">
         <slot-component>
             <div slot="content">
                 <img src="/assets/icons/email.png" width="24px" alt="Link: E-mail">
             </div>
+            <div slot="number">7</div>
         </slot-component>
     </a>
     <a href="https://github.com/luanpozzobon" target="_blank" rel="me noopener noreferrer" id="hotbar-link-8">
@@ -35,6 +45,7 @@
             <div slot="content">
                 <img src="/assets/icons/github.png" width="24px" alt="Link: Github">
             </div>
+            <div slot="number">8</div>
         </slot-component>
     </a>
     <a href="https://linkedin.com/in/luanpozzobon" target="_blank" rel="me noopener noreferrer" id="hotbar-link-9">
@@ -42,6 +53,7 @@
             <div slot="content">
                 <img src="/assets/icons/linkedin.png" width="24px" alt="Link: LinkedIn">
             </div>
+            <div slot="number">9</div>
         </slot-component>
     </a>
 </div>

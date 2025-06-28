@@ -1,53 +1,64 @@
 @import url('/style.css');
 
-#construction {
-    position: relative;
+#projects-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     max-width: 1000px;
+    margin-bottom: 200px;
+}
 
+project-component {
+    z-index: 3;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 250px;
+    height: auto;
 
-    border: 1px solid var(--font-color);
-    border-radius: 10px;
-    padding: 25px;
+    img {
+        width: 100%;
+        border-radius: 10px;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    p[slot='description'] {
+        display: none;
+        margin: 0;
+    }
 }
 
-h3 {
-    font-size: 1.5rem;
-}
-
-p {
-    text-align: center;
-}
-
-a {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    padding: 0px 5px;
-}
-
-a:hover {
-    color: white;
-}
-
-a::after {
-    content: '';
+a:hover project-component p[slot='description'] {
     position: absolute;
+    top: 0;
     left: 0;
-    bottom: 5px;
-    height: 0%;
     width: 100%;
-    height: 2px;
-    background-color: var(--comp-color);
-    transition: height 0.5s ease;
-    z-index: -1;
-    border-radius: 5px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
-a:hover::after {
-    height: calc(100% - 10px);
+a:hover project-component p[slot='description'] span {
+    margin: 5px;
+    color: var(--font-color);
+    font-size: 1rem;
+    text-align: center;
+    line-height: 18px;
 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    max-height: 100%;
 }
