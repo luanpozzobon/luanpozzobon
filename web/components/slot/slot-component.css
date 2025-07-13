@@ -10,11 +10,13 @@
   justify-content: center;
   background-color: black;
   overflow: hidden;
-  box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.45);
 }
 
 #slot:hover {
   transform: scale(1.05);
+  border: 1px solid var(--comp-color);
+  box-shadow:
+    inset 0px 0px 5px var(--comp-color);
 }
 
 #slot.selected {
