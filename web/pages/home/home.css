@@ -6,11 +6,15 @@
 }
 
 #welcome {
-    font-size: 2rem;
+    font-size: 24px;
     white-space: wrap;
-    /* border-right: 2px solid #0f0;
-    animation: blink 2s ease-out infinite; */
     display: inline-block;
+}
+
+#start>p {
+    line-height: 32px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 @keyframes blink {

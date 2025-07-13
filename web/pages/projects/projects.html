@@ -1,43 +1,60 @@
 <link rel="stylesheet" href="/pages/projects/projects.css">
 
 <div id="projects">
-    <section id="projects-grid">
-        <a href="https://github.com/luanpozzobon/MoonVs" target="_blank" rel="me noopener noreferrer">
-            <project-component>
-                <img slot="image" src="/assets/images/mvs-swagger.png" alt="Projeto MoonVs">
-                <h4 slot="title">MoonVs</h4>
-                <p slot="description">
-                    <span>
-                        Um sistema moderno para gerenciar os filmes e séries da sua coleção, incluindo, os que você quer
-                        assistir e os que você já assistiu.
-                    </span>
-                </p>
-            </project-component>
-        </a>
+    <h3>PROJETOS</h3>
 
-        <a href="">
-            <project-component>
-                <img slot="image" src="/assets/images/construcao.png" alt="Projeto em Construção">
-                <h4>&#x1F6A7 Em Construção &#x1F6A7</h4>
-                <p slot="description">
-                    <span>
-                        Projeto em construção, se você quiser ver um pouco do que eu faço, visite meu Github.
-                </p>
+    <section class="projects-grid">
+        <project-component data-id="MoonVs">
+            <img slot="image" src="/assets/images/Logo-Black.svg" alt="Projeto MoonVs">
+            <h4 slot="title">MoonVs</h4>
+            <p slot="description">
+                <span>
+                    Gerencie e avalie seus filmes e séries!
                 </span>
-            </project-component>
-        </a>
+            </p>
+        </project-component>
 
-        <a href="">
-            <project-component>
-                <img slot="image" src="/assets/images/construcao.png" alt="Projeto em Construção">
-                <h4>&#x1F6A7 Em Construção &#x1F6A7</h4>
-                <p slot="description">
-                    <span>
-                        Projeto em construção, se você quiser ver um pouco do que eu faço, visite meu Github.
-                </p>
+        <project-component data-id="utils.dao">
+            <img slot="image" src="/assets/images/utils-dao.jpeg" alt="Projeto em Construção">
+            <h4 slot="title">utils.dao</h4>
+            <p slot="description">
+                <span>
+                    Acesso ao seus bancos de dados simplificado!
                 </span>
-            </project-component>
-        </a>
+            </p>
+        </project-component>
+
+        <project-component data-id="snake-cpp">
+            <img slot="image" src="/assets/images/snake-cpp.jpeg" alt="Projeto em Construção">
+            <h4 slot="title">snake-cpp</h4>
+            <p slot="description">
+                <span>
+                    O jogo da cobrinha no seu terminal, a um comando de distância
+                </span>
+            </p>
+        </project-component>
+    </section>
+
+    <section class="comming-soon">
+        <p>Mais projetos estão vindo em breve! Mas enquanto isso você pode me visitar em:</p>
+        <div>
+            <a href="https://github.com/luanpozzobon" target="_blank" rel="me noopener noreferrer" id="hotbar-link-8">
+                <slot-component>
+                    <div slot="content">
+                        <img src="/assets/icons/github.png" width="24px" alt="Link: Github">
+                    </div>
+                </slot-component>
+            </a>
+
+            <a href="https://linkedin.com/in/luanpozzobon" target="_blank" rel="me noopener noreferrer"
+                id="hotbar-link-9">
+                <slot-component>
+                    <div slot="content">
+                        <img src="/assets/icons/linkedin.png" width="24px" alt="Link: LinkedIn">
+                    </div>
+                </slot-component>
+            </a>
+        </div>
     </section>
 </div>
 
