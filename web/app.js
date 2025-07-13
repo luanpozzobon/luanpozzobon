@@ -14,6 +14,7 @@ async function loadPage(route) {
 
         const html = await response.text()
         document.getElementById('app').innerHTML = html
+        window.scrollTo(0, 0)
     } catch {
         document.getElementById('app').innerHTML = '<h2>Página não encontrada</h2>';
     }

@@ -54,13 +54,17 @@ mapping = {
 
         window.open(link.href, '_blank');
     },
-    'W': () => window.scrollBy({ top: -100, behavior: 'smooth' }),
-    'A': () => window.scrollBy({ left: -100, behavior: 'smooth' }),
-    'S': () => window.scrollBy({ top: 100, behavior: 'smooth' }),
-    'D': () => window.scrollBy({ left: 100, behavior: 'smooth' }),
+    'W': () => scroll('W'),
+    'A': () => scroll('A'),
+    'S': () => scroll('S'),
+    'D': () => scroll('D'),
+    'L': () => toggleModal(),
+
+    'ARROWLEFT': () => previousProject(),
+    'ARROWRIGHT': () => nextProject(),
 }
 
-window.addEventListener('keypress', (event) => {
+window.addEventListener('keydown', (event) => {
     const keyMap = mapping[event.key.toUpperCase()];
     if (!keyMap) return;
 
@@ -74,4 +78,25 @@ function getHotbarLink(slotNumber) {
     if (!hotbar) return null;
 
     return hotbar.shadowRoot.getElementById(`${LINK_PREFIX}-${slotNumber}`);
+}
+
+function scroll(key) {
+    const scrollAmpunt = 100;
+    const scrollDirection = {
+        'W': { top: -scrollAmpunt, left: 0, behavior: 'smooth' },
+        'A': { top: 0, left: -scrollAmpunt, behavior: 'smooth' },
+        'S': { top: scrollAmpunt, left: 0, behavior: 'smooth' },
+        'D': { top: 0, left: scrollAmpunt, behavior: 'smooth' },
+    };
+
+    const scrollOptions = scrollDirection[key.toUpperCase()];
+
+    if (document.body.classList.contains('modal-open')) {
+        const modalContent = document.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.scrollBy(scrollOptions);
+        }
+    } else {
+        window.scrollBy(scrollOptions);
+    }
 }

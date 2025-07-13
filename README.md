@@ -1,5 +1,5 @@
 # 🧑‍💻 Luan Pozzobon
-**`Desenvolvedor Full-stack`**
+**`Desenvolvedor Back-end`**
 
 Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente sou estudante de Ciência da Computação na Universidade Positivo. Desde criança, gosto muito de tecnologia, então decidi embarcar nesta carreira.
 
@@ -121,19 +121,27 @@ Olá, me chamo Luan Rafael Pozzobon, tenho 20 anos e sou de Curitiba. Atualmente
 />
 <img
     align="left"
+    alt="SonarQube"
+    title="SonarQube"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg"
+/>
+<img
+    align="left"
+    alt="Google Cloud"
+    title="Google Cloud"
+    width="30px"
+    style="padding-right: 11px"
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
+/>
+<img
     alt="MySQL"
     title="MySQL"
     width="30px"
     style="padding-right: 11px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
 />
-<img
-    alt="SonarQube"
-    title="SonarQube"
-    width="30px"
-    style="padding-right: 11px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg"
-/>    
 
 ---
 

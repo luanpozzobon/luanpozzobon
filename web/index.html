@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Portfólio de Luan Rafael Pozzobon, desenvolvedor Full Stack com experiência em Java, Angular e projetos web modernos.">
-    <title>Home</title>
+    <title>Luan Pozzobon</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/projects-modal.css">
 </head>
 
 <body>
-    <header>
+    <header id="neon-header">
         <section id="neon-sign">
             <h1 id="title" class="neon-text">L<span class="off">u</span>an Poz<span class="off">z</span><span
                     class="off">o</span>bon</h1>
             <hr>
-            <h2 id="subtitle" class="neon-text">Software Develop<span class="off">e</span>r</h2>
+            <h2 id="subtitle" class="neon-text">Back-end Develop<span class="off">e</span>r</h2>
         </section>
     </header>
 
@@ -27,10 +28,24 @@
     <script type="module" src="./app.js"></script>
     <xp-bar-component></xp-bar-component>
     <hotbar-component></hotbar-component>
+
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <nav id="modal-nav">
+                <span id="previous-project" class="button" onclick="previousProject()">&lt;</span>
+                <span id="next-project" class="button" onclick="nextProject()">&gt;</span>
+                <span id="close-modal" class="button" onclick="closeModal()">&times;</span>
+            </nav>
+
+            <main id="modal-body"></main>
+        </div>
+    </div>
 </body>
 <script src="/scripts/key-bindings.js"></script>
 <script src="/components/slot/slot-component.js"></script>
 <script src="/components/hotbar/hotbar-component.js"></script>
 <script src="/components/xp-bar/xp-bar.component.js"></script>
+<script src="/scripts/projects-modal.js"></script>
 
 </html>

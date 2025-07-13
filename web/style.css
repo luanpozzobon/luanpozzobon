@@ -11,8 +11,9 @@
     --special-font: Neon80s;
     --font-color: rgba(255, 255, 255, 0.75);
     --bg-color: rgba(0, 0, 0, 0.8);
-    --comp-color: rgba(0, 255, 255, 0.6);
+    --comp-color: rgba(130, 40, 245, 1);
 }
+
 
 body,
 html {
@@ -22,7 +23,7 @@ html {
     min-height: 100dvh;
 }
 
-header {
+#neon-header {
     position: sticky;
     z-index: 5;
     top: 0;
@@ -143,12 +144,6 @@ hotbar-component {
     z-index: 4;
 }
 
-p {
-    line-height: 32px;
-    text-align: justify;
-    font-size: 20px;
-}
-
 a {
     text-decoration: none;
     color: var(--font-color);
@@ -200,5 +195,11 @@ a {
 
     xp-bar-component {
         bottom: 70px;
+    }
+}
+
+@media (max-height: 500px) {
+    header {
+        position: relative;
     }
 }
