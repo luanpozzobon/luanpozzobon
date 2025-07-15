@@ -22,26 +22,6 @@ async function loadPage(route) {
     if (page === 'home') animateWelcome()
 }
 
-function animateWelcome() {
-    const element = document.getElementById("welcome");
-    const welcomeText = element.textContent;
-    let i = 0;
-
-    element.textContent = "";
-
-    const MAX_TIMEOUT = 500;
-    function digitar() {
-        if (i < welcomeText.length) {
-            element.textContent += welcomeText.charAt(i);
-            i++;
-            let timeout = Math.floor(Math.random() * MAX_TIMEOUT)
-            setTimeout(() => digitar(), timeout)
-        }
-    }
-
-    digitar()
-}
-
 window.addEventListener('hashchange', () => loadPage(location.hash));
 window.addEventListener('load', () => {
     loadPage(location.hash);

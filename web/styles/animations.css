@@ -1,0 +1,61 @@
+@import url(/style.css);
+
+.interruptor-input {
+    display: none;
+}
+
+.interruptor-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 40px;
+    background-color: var(--font-color);
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.interruptor-toggle {
+    width: 10px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow:
+        inset 0px -6px 6px -6px var(--bg-color),
+        inset 0px 6px 6px -6px var(--font-color),
+        0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.25s ease-in-out;
+}
+
+.interruptor-input:checked+.interruptor-label .interruptor-toggle {
+    box-shadow:
+        inset 0px 6px 6px -6px var(--bg-color),
+        inset 0px -6px 6px -6px var(--font-color),
+        0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.interruptor-led {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+
+    background-color: #444;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+    transition: all 0.25s ease-in-out;
+}
+
+.interruptor-input:checked+.interruptor-label .interruptor-led {
+    background-color: red;
+    box-shadow:
+        0 0 5px red,
+        0 0 10px red,
+        inset 0px 1px 1px rgba(255, 255, 255, 0.2);
+}

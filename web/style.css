@@ -2,13 +2,18 @@
     font-family: Neon80s;
     src: url(/assets/fonts/neon.ttf);
 }
+
 @font-face {
     font-family: Monocraft;
     src: url(/assets/fonts/Monocraft.ttf);
 }
 
 :root {
-    --special-font: Neon80s;
+    /* Fonts */
+    --header-font: Neon80s;
+    --xp-font: Monocraft;
+
+    /* Colors */
     --font-color: rgba(255, 255, 255, 0.75);
     --bg-color: rgba(0, 0, 0, 0.8);
     --comp-color: rgba(130, 40, 245, 1);
@@ -29,7 +34,27 @@ html {
     top: 0;
     background-color: var(--bg-color);
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
+}
+
+#neon-sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+
+    width: auto;
+    max-width: 100%;
+
+    padding-bottom: 20px;
+}
+
+.bottom-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 21px;
 }
 
 h1 {
@@ -38,14 +63,14 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 34px;
     margin: 0px;
 }
 
 hr {
     margin-top: 0px;
-    margin-bottom: 0px;
-    width: 50%;
+    margin-bottom: 5px;
+    width: 100%;
 }
 
 h1,
@@ -56,18 +81,42 @@ hr {
 
 .neon-text {
     text-align: center;
-    font-family: var(--special-font);
-    color: var(--font-color);
-    text-shadow:
-        0 0 5px var(--font-color),
-        0 0 15px var(--font-color),
-        0 0 30px var(--font-color);
-}
+    font-family: var(--header-font);
 
-.neon-text .off {
-    animation: flicker 15s infinite alternate;
     text-shadow: none;
     color: rgba(200, 200, 200, 0.4);
+}
+
+#neon-sign:not(.effect-off) {
+    .neon-text {
+        color: var(--font-color);
+        text-shadow:
+            0 0 5px var(--font-color),
+            0 0 15px var(--font-color),
+            0 0 30px var(--font-color);
+    }
+
+    .neon-text .off {
+        animation: flicker 15s infinite alternate;
+        text-shadow: none;
+        color: rgba(200, 200, 200, 0.4);
+    }
+
+    #title span:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    #title span:nth-child(2) {
+        animation-delay: 8s;
+    }
+
+    #title span:nth-child(3) {
+        animation-delay: 5s;
+    }
+
+    #subtitle span:nth-child(1) {
+        animation-delay: 4s;
+    }
 }
 
 @keyframes flicker {
@@ -105,22 +154,6 @@ hr {
     }
 }
 
-#title span:nth-child(1) {
-    animation-delay: 0s;
-}
-
-#title span:nth-child(2) {
-    animation-delay: 8s;
-}
-
-#title span:nth-child(3) {
-    animation-delay: 5s;
-}
-
-#subtitle span:nth-child(1) {
-    animation-delay: 4s;
-}
-
 #app {
     display: flex;
     justify-content: center;
@@ -156,7 +189,7 @@ a {
     width: fit-content;
 }
 
-.next-page > p {
+.next-page>p {
     font-size: 20px;
 }
 

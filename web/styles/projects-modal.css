@@ -29,7 +29,6 @@ body.modal-open {
 .modal-content {
     height: 100dvh;
     overflow: auto;
-    /* overflow-x: visible; */
     position: relative;
 }
 

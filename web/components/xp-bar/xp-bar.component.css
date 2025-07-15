@@ -24,7 +24,7 @@
 }
 
 .xp-text {
-    font-family: 'Monocraft';
+    font-family: var(--xp-font);
     font-size: 21px;
     margin-bottom: -6px;
 

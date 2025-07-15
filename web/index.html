@@ -9,6 +9,7 @@
     <title>Luan Pozzobon</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/styles/projects-modal.css">
+    <link rel="stylesheet" href="/styles/animations.css">
 </head>
 
 <body>
@@ -17,7 +18,15 @@
             <h1 id="title" class="neon-text">L<span class="off">u</span>an Poz<span class="off">z</span><span
                     class="off">o</span>bon</h1>
             <hr>
-            <h2 id="subtitle" class="neon-text">Back-end Develop<span class="off">e</span>r</h2>
+            <div class="bottom-line">
+                <input type="checkbox" id="interruptor-luz" class="interruptor-input"
+                    onchange="toggleHeaderAnimation()">
+                <label for="interruptor-luz" class="interruptor-label">
+                    <div class="interruptor-toggle"></div>
+                    <span class="interruptor-led"></span>
+                </label>
+                <h2 id="subtitle" class="neon-text">Back-end Develop<span class="off">e</span>r</h2>
+            </div>
         </section>
     </header>
 
@@ -42,6 +51,7 @@
         </div>
     </div>
 </body>
+<script src="/scripts/animations.js"></script>
 <script src="/scripts/key-bindings.js"></script>
 <script src="/components/slot/slot-component.js"></script>
 <script src="/components/hotbar/hotbar-component.js"></script>
