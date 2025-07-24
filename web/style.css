@@ -41,7 +41,8 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-self: center;
+    align-items: center;
+    /* justify-self: center; */
 
     width: auto;
     max-width: 100%;
@@ -70,7 +71,7 @@ h2 {
 hr {
     margin-top: 0px;
     margin-bottom: 5px;
-    width: 100%;
+    width: 50%;
 }
 
 h1,
