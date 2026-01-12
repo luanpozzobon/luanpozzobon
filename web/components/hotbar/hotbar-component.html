@@ -10,7 +10,8 @@
     <a href="#aboutme" target="_self" rel="next" id="hotbar-link-2">
         <slot-component>
             <div slot="content">
-                <img src="/assets/icons/material-symbols--lab-profile-outline.png" width="24px" alt="Acessar Página: Sobre">
+                <img src="/assets/icons/material-symbols--lab-profile-outline.png" width="24px"
+                    alt="Acessar Página: Sobre">
             </div>
             <div slot="number">2</div>
         </slot-component>
@@ -32,26 +33,16 @@
     <slot-component>
         <div slot="number">6</div>
     </slot-component>
-    <a href="mailto:luanpozzobon@gmail.com" rel="me" id="hotbar-link-7">
+    <slot-component>
+        <div slot="number">7</div>
+    </slot-component>
+    <slot-component>
+        <div slot="number">8</div>
+    </slot-component>
+    <a href="https://gravatar.com/luanpozzobon" rel="me" id="hotbar-link-9" data-gravatar-hash="888e6d4f0005c850750f39b306d8d7f8">
         <slot-component>
             <div slot="content">
-                <img src="/assets/icons/email.png" width="24px" alt="Link: E-mail">
-            </div>
-            <div slot="number">7</div>
-        </slot-component>
-    </a>
-    <a href="https://github.com/luanpozzobon" target="_blank" rel="me noopener noreferrer" id="hotbar-link-8">
-        <slot-component>
-            <div slot="content">
-                <img src="/assets/icons/github.png" width="24px" alt="Link: Github">
-            </div>
-            <div slot="number">8</div>
-        </slot-component>
-    </a>
-    <a href="https://linkedin.com/in/luanpozzobon" target="_blank" rel="me noopener noreferrer" id="hotbar-link-9">
-        <slot-component>
-            <div slot="content">
-                <img src="/assets/icons/linkedin.png" width="24px" alt="Link: LinkedIn">
+                <img class="gravatar" src="https://www.gravatar.com/avatar/888e6d4f0005c850750f39b306d8d7f8?s=24" alt="Link: E-mail">
             </div>
             <div slot="number">9</div>
         </slot-component>

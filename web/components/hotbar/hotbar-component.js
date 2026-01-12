@@ -27,6 +27,11 @@ class Hotbar extends HTMLElement {
             ${html}
         `;
 
+        this.dispatchEvent(new CustomEvent('hotbar-loaded', {
+            bubbles: true,
+            composed: true
+        }));
+
         window.addEventListener('hashchange', () => this.changeSlot(window.location.hash));
         this.changeSlot(window.location.hash);
     }

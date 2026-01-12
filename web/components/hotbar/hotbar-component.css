@@ -16,3 +16,8 @@ slot-component, a {
         transform: scale(0.8);
     }
 }
+
+.gravatar {
+    border-radius: 6px;
+    pointer-events: none;
+}
