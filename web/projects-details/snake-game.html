@@ -1,75 +1,65 @@
-<header class="project-header">
-    <h4>snake-cpp</h4>
-</header>
+<div class="project-detail-container">
+    <header class="detail-header">
+        <div>
+            <h2>C++ Terminal Snake</h2>
+            <p class="subtitle">Implementação do clássico Snake Game em C++, aplicando conceitos de POO!</p>
+        </div>
+        <div class="badges">
+            <span class="badge" style="--hue: 220">C++</span>
+        </div>
 
-<main class="project-details">
-    <img src="/assets/images/snake-cpp.gif" alt="GIF do jogo Snake" width="100%" loading="lazy">
-    <h5>Sobre</h5>
-    <p>Aplicação de terminal em C++, que recria o clássico <b>Snake Game</b>, desenvolvida como projeto acadêmico.
-        Utiliza conceitos de orientação a objetos e e boas práticas e princípios de programação.</p>
+        <hr class="divider">
+    </header>
 
+    <main class="detail-body">
+        <img src="/assets/images/snake-cpp.gif" alt="GIF do Snake Game" width="100%" loading="lazy">
 
-    <h5>Tecnologias</h5>
-    <section class="project-tech">
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++" />
-            </div>
-        </slot-component>
+        <p>
+            Desenvolvido como projeto final da disciplina de Desenvolvimento de Software, com o objetivo de implementar
+            um jogo de terminal feito em C++, aplicando conceitos de POO, aplicando otimizações e gerenciamento manual
+            de memória.
+        </p>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gcc/gcc-original.svg" alt="GCC" title="GCC" />
-            </div>
-        </slot-component>
-    </section>
-
-    <h5>Disponibilidade</h5>
-    <section>
-        <p>O projeto roda na(s) seguinte(s) plataforma(s)</p>
-        <section class="project-tech">
-            <slot-component>
-                <div slot="content">
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" alt="Windows" title="Windows" />
-                </div>
-            </slot-component>
+        <h3>✍️ Autores</h3>
+        <section class="authors">
+            <a href="http://github.com/luanpozzobon" target="_blank" rel="me noopener noreferrer">
+                <slot-component>
+                    <div slot="content">
+                        <img src="https://avatars.githubusercontent.com/u/108753073?v=4"
+                            alt="Foto Github: Luan Pozzobon" />
+                    </div>
+                </slot-component>
+            </a>
+            <a href="https://github.com/GabrielFerreira-Dev" target="_blank" rel="noopener noreferrer">
+                <slot-component>
+                    <div slot="content">
+                        <img src="https://avatars.githubusercontent.com/u/107369374?v=4"
+                            alt="Foto Github: Gabriel Ferreira" />
+                    </div>
+                </slot-component>
+            </a>
+            <a href="https://github.com/Guiiima" target="_blank" rel="noopener noreferrer">
+                <slot-component>
+                    <div slot="content">
+                        <img src="https://avatars.githubusercontent.com/u/101485588?v=4"
+                            alt="Foto Github: Guilherme Henrique" />
+                    </div>
+                </slot-component>
+            </a>
         </section>
-    </section>
+    </main>
 
-    <h5>Autores</h5>
-    <section class="project-tech">
-        <a href="http://github.com/luanpozzobon" target="_blank" rel="me noopener noreferrer">
-            <slot-component>
-                <div slot="content">
-                    <img src="https://avatars.githubusercontent.com/u/108753073?v=4" alt="Foto Github: Luan Pozzobon"/>
-                </div>
-            </slot-component>
-        </a>
-        <a href="https://github.com/GabrielFerreira-Dev" target="_blank" rel="noopener noreferrer">
-            <slot-component>
-                <div slot="content">
-                    <img src="https://avatars.githubusercontent.com/u/107369374?v=4" alt="Foto Github: Gabriel Ferreira"/>
-                </div>
-            </slot-component>
-        </a>
-        <a href="https://github.com/Guiiima" target="_blank" rel="noopener noreferrer">
-            <slot-component>
-                <div slot="content">
-                    <img src="https://avatars.githubusercontent.com/u/101485588?v=4" alt="Foto Github: Guilherme Henrique" />
-                </div>
-            </slot-component>
-        </a>
-    </section>
+    <footer>
+        <hr class="divider">
+        <div class="cta-actions">
 
-    <h5>Links</h5>
-    <section class="project-links">
-        <a href="https://github.com/luanpozzobon/snake-cpp" target="_blank" rel="me noopener noreferrer">
-            <img src="/assets/icons/github.png" width="15px" height="15px" alt="Logo do Github" />
-            <h6>GitHub</h6>
-        </a>
-    </section>
+            <a href="https://github.com/luanpozzobon/snake-cpp" target="_blank" rel="me noopener noreferrer"
+                class="btn">
+                <img src="/assets/icons/github.png" width="20px" alt="Github" />
+                Ver Repositório
+            </a>
+        </div>
 
-    <h5>Status</h5>
-    <p>&#x2705; Concluído &#x2705;</p>
-</main>
+        <span class="status-indicator">🟢 Finalizado 🟢</span>
+    </footer>
+</div>

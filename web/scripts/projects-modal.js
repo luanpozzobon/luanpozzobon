@@ -2,6 +2,10 @@ const path = '/projects-details';
 
 const projects = [
     {
+        id: 'SynaXYZ',
+        path: `${path}/synaxyz.html`,
+    },
+    {
         id: 'MoonVs',
         path: `${path}/moonvs.html`,
     },
@@ -61,11 +65,11 @@ function previousProject() {
     openProject(projects[previousIndex].id);
 }
 
-const main = document.getElementById('app');
+const main = document.getElementById('projects');
 function setup() {
 
     main.addEventListener('click', (event) => {
-        const project = event.target.closest('project-component');
+        const project = event.target.closest('article');
         if (!project) return;
 
         event.preventDefault();

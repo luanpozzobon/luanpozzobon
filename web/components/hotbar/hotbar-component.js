@@ -1,9 +1,3 @@
-hotbar_slots = {
-    'home': 0,
-    'aboutme': 1,
-    'projects': 2,
-}
-
 class Hotbar extends HTMLElement {
     HTML_PATH = '/components/hotbar/hotbar-component.html';
     CSS_PATH = '/components/hotbar/hotbar-component.css';
@@ -32,15 +26,20 @@ class Hotbar extends HTMLElement {
             composed: true
         }));
 
-        window.addEventListener('hashchange', () => this.changeSlot(window.location.hash));
-        this.changeSlot(window.location.hash);
+        this.changeSlot(window.location.pathname);
     }
 
-    changeSlot(hash) {
+    changeSlot(path) {
         const hotbar = this.shadowRoot.getElementById('hotbar');
 
-        const pathname = hash.replace('#', '');
-        const idx = hotbar_slots[pathname];
+        let idx;
+        if (path.includes('/aboutme')) {
+            idx = 1;
+        } else if (path.includes('/projects')) {
+            idx = 2;
+        } else {
+            idx = 0;
+        }
 
         setTimeout(() => {
             hotbar.querySelectorAll('slot-component').forEach(slot => {

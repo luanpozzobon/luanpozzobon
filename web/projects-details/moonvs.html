@@ -1,96 +1,73 @@
-<header class="project-header">
-    <h4>MoonVs</h4>
-</header>
+<div class="project-detail-container">
+    <header class="detail-header">
+        <div>
+            <h2>MoonVs</h2>
+            <p class="subtitle">Aplicação WEB para gerenciar e rastrear filmes e séries assistidos e para assistir!</p>
+        </div>
+        <div class="badges">
+            <span class="badge" style="--hue: 30">Java</span>
+            <span class="badge" style="--hue: 120">Spring Boot</span>
+            <span class="badge" style="--hue: 210">PostgreSQL</span>
+            <span class="badge" style="--hue: 240">Docker</span>
+        </div>
 
-<main class="project-details">
-    <img src="/assets/images/mvs-swagger.png" alt="Endpoints do Projeto MoonVs" width="100%" loading="lazy">
+        <hr class="divider">
+    </header>
 
-    <h5>Sobre</h5>
-    <p>Um sistema moderno para gerenciar os filmes e séries da sua coleção, incluindo, os que você quer
-        assistir e os que você já assistiu.
-    </p>
+    <main class="detail-body">
+        <img src="/assets/images/mvs-swagger.png" alt="Endpoints do Projeto MoonVs" width="100%" loading="lazy">
 
+        <h3>🛑 Problema</h3>
+        <p>
+            Com o crescente número de plataformas de Streaming, fica difícil para o usuário acompanhar quais filmes ele
+            já assistiu, e principalmente, gerenciar seus conteúdos favoritos, e conseguir recomendações baseadas nisso.
+        </p>
 
-    <h5>Tecnologias</h5>
-    <section class="project-tech">
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"
-                    title="Java" />
+        <h3>⚒️ Tecnologias & Ferramentas</h3>
+        <div class="tags">
+            <div>
+                <strong>Back-end:</strong>
+                <span>Java</span>
+                <span>Spring Boot</span>
             </div>
-        </slot-component>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
-                    alt="Spring" title="Spring" />
+            <div>
+                <strong>Banco de Dados:</strong>
+                <span>PostgreSQL</span>
             </div>
-        </slot-component>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
-                    alt="Maven" title="Maven" />
+            <div>
+                <strong>Infra & DevOps:</strong>
+                <span>Docker</span>
+                <span>GCP</span>
             </div>
-        </slot-component>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                    alt="PostgreSQL" title="PostgreSQL" />
+            <div>
+                <strong>QA & Docs:</strong>
+                <span>JUnit</span>
+                <span>SonarQube</span>
+                <span>Swagger</span>
             </div>
-        </slot-component>
+        </div>
+    </main>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
-                    alt="Docker" title="Docker" />
-            </div>
-        </slot-component>
+    <footer>
+        <hr class="divider">
+        <div class="cta-actions">
 
-        <slot-component>
-            <div slot="content">
+            <a href="https://github.com/luanpozzobon/MoonVs" target="_blank" rel="me noopener noreferrer" class="btn">
+                <img src="/assets/icons/github.png" width="20px" alt="Github" />
+                Ver Repositório
+            </a>
+
+            <a href="https://moonvs-239895162731.us-central1.run.app/swagger-ui.html" target="_blank"
+                rel="me noopener noreferrer" class="btn">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
-                    alt="Google Cloud" title="Google Cloud" />
-            </div>
-        </slot-component>
+                    width="20px" alt="Google Cloud" />
+                Acessar API
+            </a>
+        </div>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg"
-                    alt="JUnit" title="JUnit" />
-            </div>
-        </slot-component>
-
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg"
-                    alt="SonarQube" title="SonarQube" />
-            </div>
-        </slot-component>
-
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg"
-                    alt="Swagger" title="Swagger" />
-            </div>
-        </slot-component>
-    </section>
-
-    <h5>Links</h5>
-    <section class="project-links">
-        <a href="https://github.com/luanpozzobon/MoonVs" target="_blank" rel="me noopener noreferrer">
-            <img src="/assets/icons/github.png" width="15px" height="15px" alt="Logo do Github" />
-            <h6>GitHub</h6>
-        </a>
-        <a href="https://moonvs-239895162731.us-central1.run.app/swagger-ui.html" target="_blank"
-            rel="me noopener noreferrer">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"
-                width="15px" height="15px" alt="Logo do Google Cloud" />
-            <h6>Acessar API</h6>
-        </a>
-    </section>
-
-    <h5>Status</h5>
-    <p>&#x1F6A7; Em Construção &#x1F6A7;</p>
-</main>
+        <span class="status-indicator">🟠 Em Desenvolvimento 🟠</span>
+    </footer>
+</div>

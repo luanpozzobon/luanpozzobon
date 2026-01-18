@@ -58,12 +58,12 @@ html {
     gap: 21px;
 }
 
-h1 {
+#title {
     font-size: 72px;
     margin: 0px;
 }
 
-h2 {
+#subtitle {
     font-size: 34px;
     margin: 0px;
 }
@@ -74,8 +74,8 @@ hr {
     width: 50%;
 }
 
-h1,
-h2,
+#title,
+#subtitle,
 hr {
     padding: 0px;
 }
@@ -155,10 +155,10 @@ hr {
     }
 }
 
-#app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+    max-width: 1000px;
+    padding-bottom: 100px;
+    margin: 0 auto;
 }
 
 xp-bar-component {
@@ -236,4 +236,33 @@ a {
     header {
         position: relative;
     }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.tags span {
+    background-color: color-mix(in srgb, var(--bg-color), white 8%);
+    border: 1px solid color-mix(in srgb, var(--font-color), black 64%);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.card {
+    background-color: color-mix(in srgb, var(--bg-color), white 8%);
+    border: 1px solid color-mix(in srgb, var(--font-color), black 64%);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--comp-color);
+    box-shadow: 0 0px 8px var(--comp-color)
 }

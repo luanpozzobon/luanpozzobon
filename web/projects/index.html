@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="Explore os projetos de engenharia de software de Luan Pozzobon: SynaXYZ, MoonVs, bibliotecas DAO e mais.">
+
+    <title>Luan Pozzobon</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/styles/projects-modal.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gravatar-com/hovercards/dist/style.css">
+
+    <script src="/scripts/animations.js" defer></script>
+    <script src="/scripts/key-bindings.js" defer></script>
+    <script src="/components/slot/slot-component.js" defer></script>
+    <script src="/components/hotbar/hotbar-component.js" defer></script>
+    <script src="/components/xp-bar/xp-bar.component.js" defer></script>
+    <script src="/scripts/projects-modal.js" defer></script>
+    <script type="module" src="/gravatar.mjs" defer></script>
+</head>
+
+<body>
+    <header id="neon-header">
+        <section id="neon-sign">
+            <h1 id="title" class="neon-text">L<span class="off">u</span>an Poz<span class="off">z</span><span
+                    class="off">o</span>bon</h1>
+            <hr>
+            <div class="bottom-line">
+                <input type="checkbox" id="interruptor-luz" class="interruptor-input"
+                    onchange="toggleHeaderAnimation()">
+                <label for="interruptor-luz" class="interruptor-label">
+                    <div class="interruptor-toggle"></div>
+                    <span class="interruptor-led"></span>
+                </label>
+                <h2 id="subtitle" class="neon-text">Back-end Develop<span class="off">e</span>r</h2>
+            </div>
+        </section>
+    </header>
+
+    <main id="projects">
+        <h3>PROJETOS</h3>
+
+        <section class="projects-grid">
+            <article class="project-card card" data-id="SynaXYZ">
+                <div class="img-wrapper">
+                    <img class="card-img" src="/assets/images/SynaXYZ.png" alt="Logo do Projeto 'SynaXYZ'"
+                        loading="lazy">
+                </div>
+                <div class="card-info">
+                    <h3>SynaXYZ</h3>
+                    <p>Aplicação modular para a gestão empresarial completa!</p>
+                    <div class="tags">
+                        <span>Electron</span>
+                        <span>Angular</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card card" data-id="MoonVs">
+                <div class="img-wrapper">
+                    <img class="card-img" src="/assets/images/Logo-Black.svg" alt="Logo do Projeto 'MoonVs'"
+                        loading="lazy">
+                </div>
+                <div class="card-info">
+                    <h3>MoonVs</h3>
+                    <p>Gerencie e avalie seus filmes e séries!</p>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card card" data-id="utils.dao">
+                <div class="img-wrapper">
+                    <img class="card-img" src="/assets/images/utils-dao.jpeg" alt="Logo do Projeto 'utils.dao'"
+                        loading="lazy">
+                </div>
+                <div class="card-info">
+                    <h3>utils.dao</h3>
+                    <p>Acesso ao seus bancos de dados simplificado!</p>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card card" data-id="snake-cpp">
+                <div class="img-wrapper">
+                    <img class="card-img" src="/assets/images/snake-cpp.jpeg" alt="Logo do Projeto 'snake-cpp'"
+                        loading="lazy">
+                </div>
+                <div class="card-info">
+                    <h3>C++ Terminal Snake</h3>
+                    <p>O jogo da cobrinha no seu terminal, a um comando de distância</p>
+                    <div class="tags">
+                        <span>C++</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <xp-bar-component></xp-bar-component>
+    <hotbar-component></hotbar-component>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <nav id="modal-nav">
+                <span id="previous-project" class="button" onclick="previousProject()">&lt;</span>
+                <span id="next-project" class="button" onclick="nextProject()">&gt;</span>
+                <span id="close-modal" class="button" onclick="closeModal()">&times;</span>
+            </nav>
+
+            <main id="modal-body"></main>
+        </div>
+    </div>
+</body>
+
+</html>

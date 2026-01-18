@@ -1,64 +1,47 @@
-<header class="project-header">
-    <h4>utils.dao</h4>
-</header>
+<div class="project-detail-container">
+    <header class="detail-header">
+        <div>
+            <h2>utils.dao</h2>
+            <p class="subtitle">Biblioteca para abstração de operações comuns de banco de dados!</p>
+        </div>
+        <div class="badges">
+            <span class="badge" style="--hue: 30">Java</span>
+            <span class="badge" style="--hue: 120">JUnit</span>
+            <span class="badge" style="--hue: 220">SonarQube</span>
+        </div>
 
-<main class="project-details">
-    <img src="/assets/images/utils-dao.png" alt="Exemplo de código usando utils.dao" width="100%" loading="lazy">
-
-    <h5>Sobre</h5>
-    <p>Biblioteca Java, para operações repetitivas de bancos de dados. O objetivo é abstrair consultas e operações
-        de CRUD no banco de dados, a partir de uma API fluente, facilitando o desenvolvimento, e permitindo o enfoque
-        nas regras de negócio.</p>
+        <hr class="divider">
+    </header>
 
 
-    <h5>Tecnologias</h5>
-    <section class="project-tech">
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" title="Java" />
-            </div>
-        </slot-component>
+    <main class="detail-body">
+        <img src="/assets/images/utils-dao.png" alt="Exemplo de código usando utils.dao" width="100%" loading="lazy">
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" alt="Maven" title="Maven" />
-            </div>
-        </slot-component>
+        <h3>🛑 Problema</h3>
+        <p>
+            Escrever consultas SQL para operações de CRUD comum, pode tornar o código sujo, misturando regras de negócio
+            com SQL, além de ocupar tempo valioso para o desenvolvedor.
+        </p>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" alt="JUnit" title="JUnit" />
-            </div>
-        </slot-component>
+        <h3>⛓️‍💥 Plataformas Disponíveis</h3>
+        <p>Atualmente a biblioteca possui implementação para o(s) seguinte(s) banco(s) de dado(s):</p>
+        <div class="badges">
+            <span class="badge" style="--hue: 220">PostgreSQL</span>
+        </div>
 
-        <slot-component>
-            <div slot="content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sonarqube/sonarqube-original.svg" alt="SonarQube" title="SonarQube" />
-            </div>
-        </slot-component>
-    </section>
+    </main>
 
-    <h5>Disponibilidade</h5>
-    <section>
-        <p>Atualmente a biblioteca está implementada para o(s) seguinte(s) banco(s) de dados.</p>
-        <section class="project-tech">
-            <slot-component>
-                <div slot="content">
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
-                </div>
-            </slot-component>
-        </section>
-    </section>
+    <footer>
+        <hr class="divider">
 
-    <h5>Links</h5>
-    <section class="project-links">
-        <a href="https://github.com/luanpozzobon/utils.dao" target="_blank" rel="me noopener noreferrer">
-            <img src="/assets/icons/github.png" width="15px" height="15px" alt="Logo do Github" />
-            <h6>GitHub</h6>
-        </a>
-    </section>
+        <div class="cta-actions">
+            <a href="https://github.com/luanpozzobon/utils.dao" target="_blank" rel="me noopener noreferrer"
+                class="btn">
+                <img src="/assets/icons/github.png" width="20px" alt="Github" />
+                Ver Repositório
+            </a>
+        </div>
 
-    <h5>Status</h5>
-    <p>&#x1F6A7 Em Construção &#x1F6A7</p>
-</main>
+        <span class="status-indicator">🔵 Estável 🔵</span>
+    </footer>
+</div>

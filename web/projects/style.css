@@ -1,0 +1,75 @@
+@import url('/style.css');
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.card-info p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.hover-indicator {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.8rem;
+    color: var(--comp-color);
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .hover-indicator {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -5,12 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio de Luan Rafael Pozzobon, desenvolvedor Full Stack com experiência em Java, Angular e projetos web modernos.">
-    <title>Luan Pozzobon</title>
-    <link rel="stylesheet" href="/style.css">
+        content="Portfólio de Luan Rafael Pozzobon, desenvolvedor Full Stack com experiência em Java, Angular e arquitetura de software.">
+
+    <meta property="og:title" content="Luan Pozzobon | Backend Developer">
+    <meta property="og:description"
+        content="Arquitetura aplicada a problemas reais. Conheça os meus projetos e trajetória.">
+    <meta property="og:image" content="https://luanpozzobon.netlify.app/assets/images/preview-card.png">
+    <meta property="og:url" content="https://luanpozzobon.netlify.app/">
+    <meta property="og:type" content="website">
+
+    <title>Luan Pozzobon | Backend Developer & Software Architecture</title>
+
+    <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/styles/projects-modal.css">
     <link rel="stylesheet" href="/styles/animations.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gravatar-com/hovercards/dist/style.css">
+
+    <script src="/scripts/animations.js" defer></script>
+    <script src="/scripts/key-bindings.js" defer></script>
+    <script src="/components/slot/slot-component.js" defer></script>
+    <script src="/components/hotbar/hotbar-component.js" defer></script>
+    <script src="/components/xp-bar/xp-bar.component.js" defer></script>
+    <script src="/scripts/projects-modal.js" defer></script>
+    <script type="module" src="/gravatar.mjs" defer></script>
 </head>
 
 <body>
@@ -31,11 +48,23 @@
         </section>
     </header>
 
-    <main id="app">
+    <main id="start">
+        <h2 id="welcome">ARQUITETURA APLICADA A PROBLEMAS REAIS • Escalabilidade e Robustez</h2>
 
+        <p>Utilizo o rigor dos fundamentos em Ciência da Computação para arquitetar sistemas resilientes no
+            ecossistema <strong>Java & Spring</strong>, aliando teoria sólida à agilidade do desenvolvimento moderno.
+        </p>
+        <p>
+            Meu foco é garantir que a aplicação funcione de maneira transparente para o usuário final, sem sacrificar a
+            segurança e robustez.
+        </p>
+
+        <a class="next-page" href="/aboutme/">
+            <p>Conheça minha trajetória&nbsp;</p>
+            <p id="arrow">&#9756;</p>
+        </a>
     </main>
 
-    <script type="module" src="./app.js"></script>
     <xp-bar-component></xp-bar-component>
     <hotbar-component></hotbar-component>
 
@@ -52,12 +81,5 @@
         </div>
     </div>
 </body>
-<script src="/scripts/animations.js"></script>
-<script src="/scripts/key-bindings.js"></script>
-<script src="/components/slot/slot-component.js"></script>
-<script src="/components/hotbar/hotbar-component.js"></script>
-<script src="/components/xp-bar/xp-bar.component.js"></script>
-<script src="/scripts/projects-modal.js"></script>
-<script type="module" src="./gravatar.mjs"></script>
 
 </html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" 
+    content="A trajetória de Luan Pozzobon.">
+
+    <title>Luan Pozzobon</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/styles/projects-modal.css">
+    <link rel="stylesheet" href="/styles/animations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gravatar-com/hovercards/dist/style.css">
+
+    <script src="/scripts/animations.js" defer></script>
+    <script src="/scripts/key-bindings.js" defer></script>
+    <script src="/components/slot/slot-component.js" defer></script>
+    <script src="/components/hotbar/hotbar-component.js" defer></script>
+    <script src="/components/xp-bar/xp-bar.component.js" defer></script>
+    <script src="/scripts/projects-modal.js" defer></script>
+    <script type="module" src="/gravatar.mjs" defer></script>
+</head>
+
+<body>
+    <header id="neon-header">
+        <section id="neon-sign">
+            <h1 id="title" class="neon-text">L<span class="off">u</span>an Poz<span class="off">z</span><span
+                    class="off">o</span>bon</h1>
+            <hr>
+            <div class="bottom-line">
+                <input type="checkbox" id="interruptor-luz" class="interruptor-input"
+                    onchange="toggleHeaderAnimation()">
+                <label for="interruptor-luz" class="interruptor-label">
+                    <div class="interruptor-toggle"></div>
+                    <span class="interruptor-led"></span>
+                </label>
+                <h2 id="subtitle" class="neon-text">Back-end Develop<span class="off">e</span>r</h2>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <h2>O HOMEM POR TRÁS DO CÓDIGO</h2>
+        <p><strong>Dos controles de videogame às IDEs, a lógica permanece.</strong></p>
+        <p>Sou Luan Pozzobon, e aplico no desenvolvimento uma abordagem técnica e racional: um software duradouro
+            nasce de fundamentos sólidos, não de tendências.</p>
+        <p>Escolhi o Back-end pois prefiro trabalhar na estrutura invisível que sustenta o negócio. Unindo a base
+            acadêmica em Ciência da Computação, com a robustez de tecnologias e arquiteturas consolidadas, trabalho para
+            entregar sistemas performáticos, seguros e escaláveis.</p>
+
+        <section id="professional">
+            <div class="title">
+                <h3>Experiência Profissional</h3>
+                <a href="/assets/files/Currículo - Luan Rafael Pozzobon.pdf" download>
+                    <p class="tooltip"><small>Baixar Currículo</small></p><img
+                        src="/assets/icons/material-symbols--download.png" width="24px" height="24px"
+                        alt="Baixar Currículo">
+                </a>
+            </div>
+            <div class="stepper-vertical">
+                <article class="step">
+                    <div class="circle-wrapper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="content">
+                        <div class="label">
+                            <h4>Desenvolvedor Full Stack (Estágio)<small> • NSInova</small></h4>
+                            <span class="date">maio 2024 - maio 2025</span>
+                        </div>
+
+                        <ul>
+                            <li>Atuei no ciclo completo de desenvolvimento (Java & Angular) de diversas funcionalidades
+                                WEB, entregando módulos robustos.</li>
+                            <li>Implementei integrações críticas em ecossistemas bancários (Bradesco e Itaú), lidando
+                                com segurança, viabilizando um serviço de automação de cobranças (Boleto e PIX).</li>
+                        </ul>
+                        <div class="tech-tags tags">
+                            <strong>Tecnologias:</strong>
+                            <span>Java 11</span>
+                            <span>Angular 8</span>
+                            <span>PostgreSQL</span>
+                            <span>Git</span>
+                            <span>TortoiseSVN</span>
+                            <span>Azure DevOps</span>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="academic">
+            <h3>Formação Acadêmica</h3>
+            <div class="stepper-vertical">
+                <article class="step">
+                    <div class="circle-wrapper">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="content">
+                        <div class="label">
+                            <h4>Ciência da Computação<small> • Universidade Positivo</small></h4>
+                            <span class="date">março 2022 - dezembro 2025</span>
+                        </div>
+                        <p>
+                            Foco em <strong>Algoritmos, Estrutura de Dados e Inteligência Artificial</strong>. A base
+                            acadêmica me dá a capacidade de entender o custo de cada solução e fundamentar minhas
+                            decisões técnicas.
+                        </p>
+
+                        <div class="tech-tags tags">
+                            <strong>Foco:</strong>
+                            <span>Estruturas de Dados</span>
+                            <span>Análise de Algoritmos</span>
+                            <span>Inteligência Artificial</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h3>Além do Código</h3>
+
+            <div class="hobbies-grid">
+
+                <article class="hobby-card card">
+                    <div class="card-icon">🎮</div>
+                    <h4>Games & Lógica</h4>
+                    <p>
+                        Minha paixão por resolver problemas complexos começou no <strong>PS2</strong> e <strong>Xbox
+                            360</strong>. Hoje, uso a mesma habilidade no desenvolvimento de software: cada linha de
+                        código é um movimento para vencer a complexidade do sistema.
+                    </p>
+                </article>
+
+                <article class="hobby-card card">
+                    <div class="card-icon">💪</div>
+                    <h4>Treino & Disciplina</h4>
+                    <p>
+                        A disciplina dos treinos me mostrou que o resultado vem da repetição e constância, não de
+                        "sprints" ocasionais.
+                    </p>
+                </article>
+
+                <article class="hobby-card card">
+                    <div class="card-icon">📚</div>
+                    <h4>Desenvolvimento Contínuo</h4>
+                    <p>
+                        Da documentação técnica à ficção passando por filosofia e assuntos gerais, estou sempre
+                        lendo. Um bom desenvolvedor é também um investigador curioso que nunca para de aprender e
+                        evoluir.
+                    </p>
+                </article>
+
+                <article class="hobby-card card">
+                    <div class="card-icon">🎧</div>
+                    <h4>Modo Foco</h4>
+                    <p>
+                        A música é a ferramenta que define meu ritmo. É ela que me ajuda a entrar no estado de foco e
+                        manter a produtividade.
+                    </p>
+                    <!-- <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8Uebhn9wzrS?utm_source=generator&theme=0"
+                        width="100%" height="80" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                    </iframe> -->
+                </article>
+            </div>
+        </section>
+
+        <a class="next-page" href="/projects/">
+            <p>Veja o que construí na prática&nbsp;</p>
+            <p id="arrow">&#9756;</p>
+        </a>
+    </main>
+
+    <xp-bar-component></xp-bar-component>
+    <hotbar-component></hotbar-component>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <nav id="modal-nav">
+                <span id="previous-project" class="button" onclick="previousProject()">&lt;</span>
+                <span id="next-project" class="button" onclick="nextProject()">&gt;</span>
+                <span id="close-modal" class="button" onclick="closeModal()">&times;</span>
+            </nav>
+
+            <main id="modal-body"></main>
+        </div>
+    </div>
+</body>
+
+</html>
